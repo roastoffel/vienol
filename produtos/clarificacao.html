@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarificação - Produtos - Vienol</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "vienol-white": "#ffffff",
+              "vienol-green": "#5d8c34",
+              "vienol-green-dark": "#4a7029",
+              "vienol-black": "#000000",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://unpkg.com/feather-icons/dist/feather.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-vienol-white">
+    <header
+      id="header"
+      class="fixed top-0 left-0 w-full z-50 py-3 px-6 md:px-10 bg-vienol-white/80 backdrop-blur-sm transition-all duration-300 shadow-md"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="/index.html">
+          <img
+            src="/img/logo.svg"
+            alt="Vienol Logo"
+            class="h-10 w-auto"
+            onerror="this.onerror=null; this.src='/img/logo.svg';"
+          />
+        </a>
+
+        <div class="hidden lg:flex items-center">
+          <nav
+            class="flex items-center space-x-8 text-vienol-black font-medium"
+          >
+            <a
+              href="/empresa.html"
+              class="hover:text-vienol-green transition-colors"
+              >A Empresa</a
+            >
+
+            <div class="relative group">
+              <a
+                href="/produtos.html"
+                class="hover:text-vienol-green transition-colors inline-flex items-center py-3"
+              >
+                <span>Produtos</span>
+                <i data-feather="chevron-down" class="w-4 h-4 ml-1"></i>
+              </a>
+              <div
+                class="absolute top-full left-0 z-20 hidden group-hover:block bg-transparent pt-2 w-56"
+              >
+                <div class="bg-white shadow-lg rounded-md">
+                  <a
+                    href="/produtos/clarificacao.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Clarificação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Coloração</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Conservação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >(Des)acidificação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Estabilização</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Fermentação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Filtração</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Fortificação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Suplementação</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <a
+                href="#"
+                class="hover:text-vienol-green transition-colors inline-flex items-center py-3"
+              >
+                <span>Qualidade</span>
+                <i data-feather="chevron-down" class="w-4 h-4 ml-1"></i>
+              </a>
+              <div
+                class="absolute top-full left-0 z-20 hidden group-hover:block bg-transparent pt-2 w-56"
+              >
+                <div class="bg-white shadow-lg rounded-md">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Certificação</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-vienol-green"
+                    >Política de Qualidade</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="/contactos.html"
+              class="hover:text-vienol-green transition-colors"
+              >Contactos</a
+            >
+          </nav>
+
+          <div
+            class="flex items-center space-x-4 ml-6 pl-6 border-l-2 border-gray-300"
+          >
+            <a
+              href="https://www.linkedin.com/company/vienol"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="text-vienol-black hover:text-vienol-green transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/vienolpt"
+              target="_blank"
+              aria-label="Facebook"
+              class="text-vienol-black hover:text-vienol-green transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="flex items-center space-x-2 ml-6 pl-6 border-l-2 border-gray-300 font-medium text-sm"
+          >
+            <span class="font-bold text-vienol-black">PT</span>
+            <span>/</span>
+            <a
+              href="/en/produtos/clarificacao.html"
+              lang="en"
+              hreflang="en"
+              class="hover:text-vienol-green transition-colors"
+              >EN</a
+            >
+          </div>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="lg:hidden z-50 text-vienol-black"
+        >
+          <i data-feather="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </header>
+
+    <div
+      id="menu-overlay"
+      class="fixed inset-0 bg-black/50 z-30 hidden lg:hidden"
+    ></div>
+    <div
+      id="mobile-menu"
+      class="menu-mobile fixed top-0 right-0 h-full w-2/3 max-w-sm bg-vienol-white z-40 transform translate-x-full lg:hidden pt-24 px-8 text-center flex flex-col shadow-xl"
+    >
+      <nav
+        class="flex flex-col space-y-6 text-xl text-vienol-black font-medium"
+      >
+        <a href="/empresa.html" class="mobile-link hover:text-vienol-green"
+          >A Empresa</a
+        >
+        <div>
+          <div class="flex items-center justify-center">
+            <a
+              href="/produtos.html"
+              class="mobile-link text-vienol-green font-bold"
+              >Produtos</a
+            >
+            <button
+              class="mobile-submenu-button ml-2"
+              aria-label="Abrir submenu de Produtos"
+            >
+              <i
+                data-feather="chevron-down"
+                class="w-5 h-5 transition-transform"
+              ></i>
+            </button>
+          </div>
+          <div class="mobile-submenu hidden mt-4 space-y-4">
+            <a
+              href="/produtos/clarificacao.html"
+              class="block text-base text-gray-600 hover:text-vienol-green"
+              >Clarificação</a
+            >
+            <a
+              href="#"
+              class="block text-base text-gray-600 hover:text-vienol-green"
+              >Coloração</a
+            >
+            <a
+              href="#"
+              class="block text-base text-gray-600 hover:text-vienol-green"
+              >Conservação</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center justify-center">
+            <a href="#" class="mobile-link hover:text-vienol-green"
+              >Qualidade</a
+            >
+            <button
+              class="mobile-submenu-button ml-2"
+              aria-label="Abrir submenu de Qualidade"
+            >
+              <i
+                data-feather="chevron-down"
+                class="w-5 h-5 transition-transform"
+              ></i>
+            </button>
+          </div>
+          <div class="mobile-submenu hidden mt-4 space-y-4">
+            <a
+              href="#"
+              class="block text-base text-gray-600 hover:text-vienol-green"
+              >Certificação</a
+            >
+            <a
+              href="#"
+              class="block text-base text-gray-600 hover:text-vienol-green"
+              >Política de Qualidade</a
+            >
+          </div>
+        </div>
+        <a href="/contactos.html" class="mobile-link hover:text-vienol-green"
+          >Contactos</a
+        >
+      </nav>
+      <div class="mt-auto pb-10">
+        <div
+          class="flex justify-center items-center space-x-6 mb-8 pt-8 border-t border-gray-300"
+        >
+          <a
+            href="https://www.linkedin.com/company/vienol"
+            target="_blank"
+            aria-label="LinkedIn"
+            class="text-vienol-black hover:text-vienol-green"
+          >
+            <svg
+              class="w-7 h-7"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>LinkedIn</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/vienolpt"
+            target="_blank"
+            aria-label="Facebook"
+            class="text-vienol-black hover:text-vienol-green"
+          >
+            <svg
+              class="w-7 h-7"
+              role="img"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Facebook</title>
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="flex justify-center items-center space-x-2 font-medium text-sm"
+        >
+          <span class="font-bold text-vienol-black">PT</span>
+          <span>/</span>
+          <a
+            href="/en/produtos/clarificacao.html"
+            lang="en"
+            hreflang="en"
+            class="hover:text-vienol-green"
+            >EN</a
+          >
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="pt-32 pb-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+          <a href="../produtos.html" class="text-vienol-green hover:underline">
+            ← Voltar a todos os produtos
+          </a>
+          <h1 class="text-4xl lg:text-5xl font-bold text-vienol-green mt-4">
+            Clarificação
+          </h1>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="container mx-auto px-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/procarb.avif"
+                  alt="PROCARB"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    PROCARB
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      O ProCarB é uma associação de clarificantes vegetais e
+                      minerais:
+                    </p>
+                    <p class="text-xs italic">
+                      Carvão vegetal + Proteína vegetal + Bentonite
+                    </p>
+                    <p>
+                      Clarifica e elimina compostos oxidados e oxidáveis nos
+                      vinhos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_ProCarb_ed5.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS ProCarB ed02.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/procelb.avif"
+                  alt="PROCELB"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    PROCELB
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>O ProCelB é uma associação de clarificantes vegetais:</p>
+                    <p class="text-xs italic">
+                      PVPP + Proteína vegetal + Bentonite + Celulose
+                    </p>
+                    <p>
+                      Elimina o risco de escurecimento e melhora o carácter
+                      organoléptico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_Procelb_ed3.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS ProCelB ed02.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/vi-bento.avif"
+                  alt="VI - BENTO"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    VI - BENTO
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      O VI - BENTO é uma bentonite natural sódica, não activada
+                      artificialmente (E 558).
+                    </p>
+                    <p>
+                      Utilizado para a clarificação e estabilização proteíca em
+                      mostos e vinhos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_VI-BENTO_ed5_V2.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS VI - BENTO ed04.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/vi-clargel.avif"
+                  alt="VI - CLARGEL"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    VI - CLARGEL
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      Clarificante de proteína vegetal pura (Pisum sativum), que
+                      melhora a limpidez e suaviza a adstringência.
+                    </p>
+                    <p>
+                      Utilizado na clarificação de vinhos tintos, brancos, rosés
+                      e vinhos licorosos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_VI-Clargel_ed5.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS VI - CLARGEL ed05.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/vi-clargel-l.avif"
+                  alt="VI - CLARGEL L"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    VI - CLARGEL L
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      Formulação líquida de proteína de ervilha (Pisum sativum),
+                      isenta de glúten e SO2 &lt; 0.3%.
+                    </p>
+                    <p>Reduz o teor em taninos e o teor em ferro.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_VI-Clargel L_ed1.1.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <span
+                  class="flex-1 text-center bg-gray-400 text-gray-800 px-4 py-3 text-sm font-medium cursor-not-allowed"
+                  onclick="alert('Ficha de Segurança não disponível.')"
+                  >Ficha de Segurança</span
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/vi-fini.avif"
+                  alt="VI - FINI"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    VI - FINI
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      Clarificante complexo composto por leveduras inactivadas,
+                      quitosano de Aspergillus niger e ácidos orgânicos.
+                    </p>
+                    <p>
+                      É livre de alergéneos e de ingredientes de origem animal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_VI-Fini_ed3.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS VI - Fini ed02.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+
+            <div class="rounded-lg overflow-hidden">
+              <div class="relative w-full aspect-square">
+                <img
+                  src="../img/vi-redox.avif"
+                  alt="VI - REDOX"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 w-full h-full p-4 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent"
+                >
+                  <h3 class="text-white text-xl font-bold text-shadow">
+                    VI - REDOX
+                  </h3>
+                  <div
+                    class="text-white/90 text-sm mt-2 space-y-1 text-shadow-sm"
+                  >
+                    <p>
+                      Clarificante indicado para a prevenção e tratamento de
+                      aromas de redução.
+                    </p>
+                    <p>Conteúdo em cobre: 0.7%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <a
+                  href="../pdf/FT_VI-Redox_ed2.1.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-vienol-green text-white px-4 py-3 hover:bg-vienol-green-dark transition-colors text-sm font-medium"
+                  >Ficha Técnica</a
+                >
+                <a
+                  href="../pdf/FS VI - REDOX ed01.pdf"
+                  target="_blank"
+                  class="flex-1 text-center bg-gray-600 text-white px-4 py-3 hover:bg-gray-700 transition-colors text-sm font-medium"
+                  >Ficha de Segurança</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-800 text-white"></footer>
+
+    <button
+      id="chat-widget"
+      aria-label="Abrir chat"
+      class="fixed bottom-6 right-6 z-40 bg-vienol-green text-white p-4 rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-lg"
+    >
+      <svg
+        class="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+        ></path>
+      </svg>
+    </button>
+    <div
+      id="chat-container"
+      class="hidden fixed bottom-24 right-6 w-80 md:w-96 bg-white rounded-lg shadow-2xl z-50 flex flex-col"
+      style="height: 60vh"
+    >
+      <div
+        class="bg-vienol-green text-white p-4 flex justify-between items-center rounded-t-lg"
+      >
+        <h3 class="font-bold text-lg">Assistente Vienol</h3>
+        <button
+          id="close-chat"
+          aria-label="Fechar chat"
+          class="hover:text-gray-300"
+        >
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="chat-messages" class="flex-grow p-4 overflow-y-auto">
+        <div class="flex justify-start mb-4">
+          <div class="rounded-lg p-3 max-w-xs text-sm bg-gray-100 text-black">
+            Olá! Como posso ajudar hoje?
+          </div>
+        </div>
+      </div>
+      <div class="p-4 border-t border-gray-200">
+        <div class="flex">
+          <input
+            type="text"
+            id="chat-input"
+            placeholder="Digite sua mensagem..."
+            class="w-full px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-vienol-green"
+          />
+          <button
+            id="send-message"
+            aria-label="Enviar mensagem"
+            class="bg-vienol-green text-white px-4 py-2 rounded-r-md hover:bg-vienol-green-dark"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10.894 2.553a1 1 0 00-1.789 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>
